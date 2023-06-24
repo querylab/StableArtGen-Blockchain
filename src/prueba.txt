@@ -1,0 +1,173 @@
+ display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  marginBottom: '20px'
+
+
+
+
+
+
+
+  <button type="submit" style={{
+    border: '7px solid #fff',
+    borderRadius: '20px',
+    color: '#333',
+    fontWeight: 'bold',
+    background: 'linear-gradient(to right, #ef9a9a, #fff)',
+    marginBottom: '20px'
+  }}>
+    {isWaiting ? (
+      <Spinner animation="border" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </Spinner>
+    ) : (
+      "Create & Mint"
+    )}
+  </button>
+
+
+
+
+
+    <button type="submit" style={{
+border: '7px solid #202020',
+borderRadius: '20px',
+color: '#333',
+fontWeight: 'bold',
+background: 'linear-gradient(to right, #202020, #202020)',
+marginBottom: '20px',
+marginLeft: '85px',
+fontSize: '25px'
+}}>
+{isWaiting ? (
+<Spinner animation="border" role="status">
+<span className="visually-hidden">Loading...</span>
+</Spinner>
+) : (
+<>
+
+
+
+
+<img class="transparent-image" src="https://i.imgur.com/TCeRKna.png" alt="mint" />
+
+
+</>
+)}
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+require('@nomicfoundation/hardhat-toolbox');
+
+const privateKey = "9a9477788649da900cf3b9ec44929a77f67d79b566595947eb2436ae46df2598"; // my wallet private key polygon mumbai testnework
+//  alchemy polygone mumbai testnet api key
+const ALCHEMY_API_KEY = "VU2Gl0LisHtXp6vxaTNTyC80SB1Ooqau"; //Alchemy apikey
+
+module.exports = {
+  solidity: '0.8.17',
+  networks: {
+    hardhat: {},
+    mumbai: {
+      url: `https://polygon-mumbai.g.alchemy.com/v2/${ALCHEMY_API_KEY}`,
+      accounts: [privateKey],
+    },
+  },
+};
+
+
+
+
+
+
+
+80001
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
